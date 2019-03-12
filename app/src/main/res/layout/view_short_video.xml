@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.pili.pldroid.player.widget.PLVideoTextureView
+        android:id="@+id/video_texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/coverimage" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTopName" />
+    </LinearLayout>
+</LinearLayout>
+
+<FrameLayout
+    android:id="@+id/top_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/image_pause_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:src="@drawable/play"
+        android:visibility="gone" />
+</FrameLayout>
+
+<LinearLayout
+    android:id="@+id/loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppThemeProgress" />
+</LinearLayout>
+<ImageView
+    android:id="@+id/img_plus"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_gravity="right"
+    android:src="@drawable/plus"/>
+</FrameLayout>
